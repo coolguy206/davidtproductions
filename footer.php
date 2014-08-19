@@ -1,25 +1,29 @@
-</article>
-</section><!--wrapper-content-->
+</div>
+</div>
+</div><!--wrapper-content-->
 
-<section class="wrapper-footer">
+<div class="wrapper-footer">
 <footer>
 <div class="box460">
 <p>Copyright &copy; <?php echo date('Y'); ?> All rights reserved <a href="<?php bloginfo('url'); ?>">DavidTProductions.com</a></p>
 </div>
 
 <div class="box460">
-
-<ul>
-<li><a href="https://www.facebook.com/davidtproductions" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/facebook-icon.png" alt="facebook" class="facebook"></a></li>
-<li><a href="https://twitter.com/DavTProductions" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/twitter-icon.png" alt="twitter" class="twitter"></a></li>
-<li><a href="http://www.linkedin.com/pub/david-thanphilom/9/132/496" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/linkedin-icon.png" alt="linkedin" class="linkedin"></a></li>
-</ul>
-
-</div>
+<?php include('social-media-icons.php'); ?>
+</div><!--.box460-->
 
 </footer>
-</section><!--wrapper-footer-->
-
+</div><!--wrapper-footer-->
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.1.1.min.js"></script>
+<script src="<?php bloginfo('stylesheet_directory'); ?>/js/responsive-nav.js"></script>
+<script src="<?php bloginfo('stylesheet_directory'); ?>/js/image-swap.js"></script>
+<script src="<?php bloginfo('stylesheet_directory'); ?>/js/jquery.flexslider.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+$('.flexslider').flexslider({directionNav: false});
+});
+</script>
 <?php wp_footer(); ?>
 </body>
 </html> 

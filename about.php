@@ -9,7 +9,7 @@
 
 </nav>
 
-<section class="box780">
+<div class="box460">
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <h1><?php wp_title(''); ?></h1>
@@ -20,6 +20,12 @@
 
 <?php endif; ?>
 
-</section>
+<?php include('responsive-sidebar.php'); ?>
+
+</div><!--.box460-->
+
+<aside>
+<?php get_sidebar(); ?>
+</aside>
 
 <?php get_footer(); ?>

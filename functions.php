@@ -4,6 +4,15 @@
 'Contact' => 'Contact Nav'
 
 )); ?>
+<?php register_sidebar(array(
+'id' => 'primary-sidebar',
+'name'=> 'primary sidebar',
+'description'  => __( 'Widgets in this area will be shown on the right-hand side.' ),
+'before_widget' => '',
+'after_widget' => '',
+'before_title' => '<h3>',
+'after_title'  => '</h3>'
+)); ?>
 <?php add_theme_support( 'automatic-feed-links' ); ?>
 <?php add_theme_support( 'post-thumbnails' );  ?>
 <?php function custom_excerpt_length( $length ) {
