@@ -17,8 +17,8 @@
 <?php rewind_posts(); // stop loop two ?> 
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-<h1>DavidTProductions</h1>
-<?php echo get_post_meta(10, 'excerpt', true); ?>
+<h1>Seattle Web Development</h1>
+<?php echo get_post_meta(6, 'excerpt', true); ?>
 
 <?php endwhile; else: ?>
 <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>

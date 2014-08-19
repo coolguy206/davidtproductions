@@ -8,7 +8,7 @@
 
 <?php the_content(); ?>
 
-<?php $args = array('category_name' => 'portflio', 'order' => 'DESC', 'orderby' => 'date', 'posts_per_page' => '9999');
+<?php $args = array('category' => '5', 'order' => 'DESC', 'orderby' => 'date', 'posts_per_page' => '9999');
 $lastposts = get_posts($args);
 foreach($lastposts as $post) { ?>
 <article class="blog">

@@ -25,8 +25,8 @@
 <?php previous_post_link('%link','<i class="fa fa-arrow-circle-left fa-4x"></i>', TRUE); ?>
 <?php next_post_link('%link','<i class="fa fa-arrow-circle-right fa-4x"></i>', TRUE); ?>
 <?php } else { ?>
-<?php previous_post_link('%link','<i class="fa fa-arrow-circle-left fa-4x"></i>'); ?>
-<?php next_post_link('%link','<i class="fa fa-arrow-circle-right fa-4x"></i>'); ?>
+<?php previous_post_link('%link','<i class="fa fa-arrow-circle-left fa-4x"></i>','5'); ?>
+<?php next_post_link('%link','<i class="fa fa-arrow-circle-right fa-4x"></i>','5'); ?>
 <?php } ?>
 </div><!--.post-links-->
 
