@@ -426,6 +426,10 @@ footer a {
 	font-size: 2em;
 	font-family: 'eurostile';
 }
+.portfolio-images {
+	width: 300px;
+	float: right;
+}
 li.cat-item, div.tag li, div.search li  {
 	margin-bottom: 10px;
 	font-style: normal;
@@ -668,6 +672,11 @@ div.box300 {
 /*-------------FOOTER----------------------*/
 footer  {
 	text-align: center;
+}
+
+/*-------------CLASSES----------------------*/
+.portfolio-images {
+	float: none;
 }
 }
 @media screen and (max-width: 320px) {

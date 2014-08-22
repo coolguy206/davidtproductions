@@ -54,7 +54,7 @@ if ( is_home() || is_front_page() ) {
 <header>
 <div class="logo">
 <a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo-header.png" alt="<?php bloginfo('name'); ?>"></a><br>
-<span class="tagline">Your Webdesign Solutions!</span>
+<span class="tagline">Your Web Development Solutions!</span>
 </div><!--.logo-->
 
 <div class="box380">
