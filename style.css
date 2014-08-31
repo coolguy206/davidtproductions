@@ -409,6 +409,11 @@ footer a {
 	color:  #cc0000;
 }
 /*----------------------------CLASSES------------------*/
+.footer-image {
+	float: left;
+	margin-right: 10px;
+	border: 1px solid #001D32;
+}
 .post-links {
 	overflow: hidden;
 	clear: both;
@@ -561,7 +566,10 @@ footer li {
 
 @media screen and (max-width: 768px) {
 /*-------------HEADER----------------------*/
-
+/*-------------NAV----------------------*/
+nav li {
+	font-size: 1em;
+}
 /*-------------FOOTER----------------------*/
 div.single h1 {
 	font-size: 1.5em;
