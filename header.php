@@ -19,7 +19,7 @@ if ( is_home() || is_front_page() ) {
 }
 ?>
 </title>
-<meta name="description" content="<?php if(is_page()){ echo get_post_meta($post->ID, 'excerpt', true); } elseif(is_single()){ echo get_the_excerpt(); } ?>">
+<meta name="description" content="<?php if(is_page()){ echo get_post_meta($post->ID, 'description', true); } elseif(is_single()){ echo get_post_meta($post->ID, 'description', true); } ?>">
 <meta name="keywords" content="Seattle,Web design,development,services,HTML5,CSS3,JavaScript,jQuery,PHP,MySQL,WordPress,tutorials">
 <meta name="author" content="David Thanphilom">
 <meta charset="<?php bloginfo( 'charset' ); ?>">
