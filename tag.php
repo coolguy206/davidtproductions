@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<h1>Tag: <?php single_tag_title(); ?></h1>
+<h1><?php single_tag_title(); ?></h1>
 <div class="box620">
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
