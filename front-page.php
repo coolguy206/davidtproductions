@@ -72,7 +72,7 @@
 <h3><a href="<?php the_permalink(); ?>"><?php the_title(''); ?></a></h3>
 <header>
 <div class="date">
-<i class="fa fa-calendar fa-lg"></i> <?php the_time('F j, Y'); ?>
+<i class="fa fa-calendar fa-lg"></i> <?php the_time('M j, Y'); ?>
 
 <!--check if has categories-->
 <?php if(has_category()){ ?>
