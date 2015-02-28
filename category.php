@@ -19,7 +19,7 @@
    </div><!--.box300-->
  <?php endif; ?>
 
-<div class="float-left">
+<div>
 	<header>
 <h2><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h2>
 <div class="date">
