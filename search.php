@@ -20,7 +20,21 @@ $search = new WP_Query($search_query);
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 <article class="blog">
-<header>
+
+<div class="blog-content">
+<div class="box300">
+
+<?php if ( has_post_thumbnail()) : ?>
+ <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
+
+   <?php the_post_thumbnail(array(300,9999)); ?>
+   </a>
+ <?php endif; ?>
+
+</div><!--.box300-->
+
+<div>
+	<header>
 <h2><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h2>
 <div class="date">
 <i class="fa fa-calendar fa-lg"></i> <?php the_time('M j, Y'); ?>
@@ -37,19 +51,6 @@ $search = new WP_Query($search_query);
 </div><!--.date-->
 </header>
 
-<div class="blog-content">
-<div class="box300">
-
-<?php if ( has_post_thumbnail()) : ?>
- <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
-
-   <?php the_post_thumbnail(array(300,9999)); ?>
-   </a>
- <?php endif; ?>
-
-</div><!--.box300-->
-
-<div>
 <?php the_excerpt(); ?>
 </div>
 </div><!--.blog-content-->
