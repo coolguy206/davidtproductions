@@ -8,18 +8,18 @@
 
 
 <div class="blog-content">
-<div class="box300">
+
 
 <?php if ( has_post_thumbnail()) : ?>
+	<div class="box300">
  <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
 
    <?php the_post_thumbnail(array(300,9999)); ?>
    </a>
+   </div><!--.box300-->
  <?php endif; ?>
 
-</div><!--.box300-->
-
-<div>
+<div class="float-left">
 	<header>
 <h2><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h2>
 <div class="date">
